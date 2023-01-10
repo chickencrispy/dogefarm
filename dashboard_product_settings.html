@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pengaturan akun | DogeFarm </title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-accent py-3">
+      <div class="container justify-content-start">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-wheat-awn me-2 text-success"></i>
+          <h5 class="mb-0 fw-bold text-light">DogeFarm</h5>
+        </a>
+
+        <div class="d-flex align-items-center ms-auto">
+          <div class="dropdown">
+            <a class="dropdown-toggle d-flex align-items-center text-light" href="#" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+              <img src="https://1.bp.blogspot.com/-He6HDzHjFyw/XvAOg4zPSGI/AAAAAAAAIFo/ZC5KgDgiq-ofJWHV_ZRb7QNI9ihefqRxACK4BGAsYHg/w1280-h720-p-k-no-nu/Bercocok%2Btanam%2Btanaman%2Bhidroponik.jpg" class="img-square img-avatar rounded-circle" height="25" />
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end fs-sm p-0" aria-labelledby="navbarDropdownMenuAvatar">
+              <li><a class="dropdown-item" href="#"> Profil </a></li>
+              <li><a class="dropdown-item" href="#"> Pengaturan </a></li>
+              <li><a class="dropdown-item" href="./"> Keluar </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container fs-sm">
+      <div class="row g-3">
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="list-group list-group-light list-group-small">
+                <a href="./dashboard_account_settings.html" class="list-group-item list-group-item-action px-3">Profil</a>
+                <a href="./dashboard_product_settings.html" class="list-group-item list-group-item-action px-3">Produk</a>
+                <a href="#" class="list-group-item list-group-item-action px-3">Keluar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="card">
+            <div class="card-body p-lg-4">
+              <form class="form-sm">
+                <div class="row">
+                  <h5 class="fw-bold mb-2"> Pengaturan Produk </h5>
+                  <div class="col-lg-9">
+                    <div class="row g-3 mt-1">
+                      <div class="col-lg-12">
+                        <div class="form-outline">
+                          <input type="text" id="formProdukNama" class="form-control" />
+                          <label class="form-label" for="formProdukNama"> Kategori </label>
+                        </div>
+                      </div>
+                      
+                      <div class="col-lg-12"> 
+                        <div class="form-outline">
+                          <input type="text" id="formProdukNama" class="form-control" />
+                          <label class="form-label" for="formProdukNama"> Nama Produk </label>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-12">
+                        <div class="form-outline">
+                          <textarea id="formProdukDesc" class="form-control" rows="3"></textarea>
+                          <label class="form-label" for="formProdukDesc"> Deskripsi Produk </label>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="form-outline">
+                          <input type="text" id="formProdukHarga" class="form-control" />
+                          <label class="form-label" for="formProdukHarga"> Harga </label>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="form-outline">
+                          <input type="text" id="formProdukUnit" class="form-control" />
+                          <label class="form-label" for="formProdukUnit"> Unit </label>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="form-outline">
+                          <input type="date" id="formProdukETH" class="form-control" />
+                          <label class="form-label" for="formProdukETH"> Estimasi waktu panen </label>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-8 my-3">
+                        <div class="setting-time">
+                          <div class="day">
+                            <input class="form-check-input" type="checkbox" id="sunday">
+                            <label for="sunday" class="flex-fill">Sunday</label>
+                            <input type="time" class="form-control">
+                            <input type="time" class="form-control">
+                          </div>
+
+                          <div class="day">
+                            <input class="form-check-input" type="checkbox" id="monday">
+                            <label for="monday" class="flex-fill">Monday</label>
+                            <input type="time" class="form-control">
+                            <input type="time" class="form-control">
+                          </div>
+
+                          <div class="day">
+                            <input class="form-check-input" type="checkbox" id="tuesday">
+                            <label for="tuesday" class="flex-fill">Tuesday</label>
+                            <input type="time" class="form-control">
+                            <input type="time" class="form-control">
+                          </div>
+
+                          <div class="day">
+                            <input class="form-check-input" type="checkbox" id="wednesday">
+                            <label for="wednesday" class="flex-fill">Wednesday</label>
+                            <input type="time" class="form-control">
+                            <input type="time" class="form-control">
+                          </div>
+
+                          <div class="day">
+                            <input class="form-check-input" type="checkbox" id="thursday">
+                            <label for="thursday" class="flex-fill">Thursday</label>
+                            <input type="time" class="form-control">
+                            <input type="time" class="form-control">
+                          </div>
+
+                          <div class="day">
+                            <input class="form-check-input" type="checkbox" id="friday">
+                            <label for="friday" class="flex-fill">Friday</label>
+                            <input type="time" class="form-control">
+                            <input type="time" class="form-control">
+                          </div>
+
+                          <div class="day">
+                            <input class="form-check-input" type="checkbox" id="saturday">
+                            <label for="saturday" class="flex-fill">Saturday</label>
+                            <input type="time" class="form-control">
+                            <input type="time" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-12 my-3"> 
+                        <label class="form-label ms-1 mb-1"> Keunggulan </label> 
+                        <div class="row">
+                          <div class="col-4">
+                            <label class="form-check mb-2 flex-fill">
+                              <input class="form-check-input" type="checkbox" name="choose_x">
+                              <span class="form-check-label"> Pupuk Organik </span>
+                            </label>
+                          </div>
+                          <div class="col-4">
+                            <label class="form-check mb-2 flex-fill">
+                              <input class="form-check-input" type="checkbox" name="choose_x">
+                              <span class="form-check-label"> Tanpa pestisida </span>
+                            </label>
+                          </div>
+                          <div class="col-4">
+                            <label class="form-check mb-2 flex-fill">
+                              <input class="form-check-input" type="checkbox" name="choose_x">
+                              <span class="form-check-label"> Sehat &amp; Higienis</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <aside class="col-lg-3 img-upload-wrap">
+                    <label class="upload-img"> 
+                      <input type="file" name="lorem"> 
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="#999" width="32" height="32" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M16.83 4L15 2H9L7.17 4H2v16h20V4h-5.17zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z">
+                        </path>
+                      </svg>
+                      <div class="text-muted">Choose a file</div>
+                    </label>
+                  </aside>
+                </div>
+
+                <hr class="border-secondary">
+
+                <button class="btn btn-success fs-sm px-4 rounded-pill float-end"> Simpan Produk </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="card my-3">
+            <div class="card-body p-lg-4">
+              <h5 class="fw-bold mb-3"> Daftar Produk </h5>
+              <div class="table-responsive">
+                <table class="table table-sm align-middle mb-0 bg-white fs-sm">
+                  <thead class="bg-light">
+                    <tr>
+                      <th></th>
+                      <th>Nama Produk</th>
+                      <th>Harga</th>
+                      <th>Unit</th>
+                      <th>Waktu Panen</th>
+                      <th>Rating</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input class="form-check-input" type="checkbox"></td>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <img src="https://sidoarjonews.id/wp-content/uploads/2020/09/sayur-sehat-1280x720.jpg" style="width: 45px; height: 45px" class="rounded-circle" />
+                          <div class="ms-3">
+                            <p class="fw-bold mb-0">Sawi Hijau</p>
+                            <p class="text-muted mb-0 d-sm-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="fw-normal mb-1">Rp 40.000</p>
+                      </td>
+                      <td> Kg </td>
+                      <td> 23/11/2022 </td>
+                      <td>
+                        <span class="text-warning">
+                          <i class="fas fa-star"></i> 
+                          <i class="fas fa-star"></i> 
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-stroke"></i>
+                        </span>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-link btn-block btn-smt btn-rounded text-secondary fs-sm">
+                          Edit
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-footer bg-accent shadow fs-sm">
+    <div class="container">
+      <section class="footer-main pt-5 pb-3">
+        <div class="row">
+          <aside class="col-lg-4 mb-3">
+            <article class="me-lg-4">
+              <div class="footer-brand d-flex">
+                <i class="fas fa-wheat-awn fa-2x me-2 text-success"></i>
+                <h5 class="fw-bold mb-0 text-light">DogeFarm</h5>
+              </div>
+              
+              <p class="mt-3"> You might remember the Lenovo computer commercials in which a youth reports this exciting news to his friends. </p>
+              <nav> 
+                <a class="btn btn-link text-light" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a> 
+                <a class="btn btn-link text-light" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram"></i></a> 
+                <a class="btn btn-link text-light" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube"></i></a> 
+                <a class="btn btn-link text-light" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter"></i></a> 
+              </nav>
+            </article>
+          </aside>
+
+          <aside class="col-6 col-sm-3 col-lg-2">
+            <h6 class="title">About</h6>
+            <ul class="list-menu text-light">
+              <li> <a href="#">About us</a></li>
+              <li> <a href="#">Services</a></li>
+              <li> <a href="#">Rules and terms</a></li>
+              <li> <a href="#">Blogs</a></li>
+            </ul>
+          </aside>
+          <aside class="col-6 col-sm-3 col-lg-2">
+            <h6 class="title">Services</h6>
+            <ul class="list-menu text-light">
+              <li> <a href="#">Help center</a></li>
+              <li> <a href="#">Money refund</a></li>
+              <li> <a href="#">Terms and Policy</a></li>
+              <li> <a href="#">Open dispute</a></li>
+            </ul>
+          </aside>
+          <aside class="col-6 col-sm-3 col-lg-2">
+            <h6 class="title">For users</h6>
+            <ul class="list-menu text-light">
+              <li> <a href="#"> User Login </a></li>
+              <li> <a href="#"> User register </a></li>
+              <li> <a href="#"> Account Setting </a></li>
+              <li> <a href="#"> My Orders </a></li>
+            </ul>
+          </aside>
+          <aside class="col-6 col-sm-2 col-lg-2">
+            <h6 class="title">Get the app</h6> 
+            <a href="#" class="d-block mb-2"><img src="./assets/img/btn-appstore.png" height="40"></a> 
+            <a href="#" class="d-block mb-2"><img src="./assets/img/btn-market.png" height="40"></a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="footer-bottom py-3 d-flex justify-content-lg-between border-top border-success">
+        <p class="mb-0"> &copy; 2022 DogeFarm. All rights reserved. </p>
+        <nav class="text-light"> 
+          <a href="#" class="px-2">Support</a> 
+          <a href="#" class="px-2">Privacy &amp; Cookies</a> 
+          <a href="#" class="px-2">Accessibility</a> 
+        </nav>
+      </section>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal top fade" id="addAdminModal" tabindex="-1" aria-labelledby="addAdminModalLabel" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
+    <div class="modal-dialog   modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title fw-bold" id="addAdminModalLabel"> Tambah Admin </h6>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="form-sm">
+            <div class="row gx-3 px-3">
+              <div class="col-12 mb-2">
+                <label class="form-label fs-sm ms-1 mb-1"> Nama </label>
+                <input class="form-control" type="text">
+              </div>
+              <div class="col-12 mb-2">
+                <label class="form-label fs-sm ms-1 mb-1"> Telepon / WhatsApp </label>
+                <input class="form-control" type="text">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary px-4 fs-sm rounded-pill" data-mdb-dismiss="modal"> Batal </button>
+          <button type="button" class="btn btn-success px-4 fs-sm rounded-pill"> Simpan </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+  <script>
+    function initMap() {
+      const myLatLng = {
+        lat: 1.109351,
+        lng: 104.056911
+      };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 5,
+        center: myLatLng,
+      });
+
+      new google.maps.Marker({
+        position: myLatLng,
+        map,
+        title: "Hello World!",
+      });
+    }
+
+    window.initMap = initMap;
+  </script>
+  </script>
+</body>
+</html>
